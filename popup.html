@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Page</title>
+
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="popup.css">
+
+    
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="welcome-image">
+                <img src="./assets/welcome_image.svg" alt="">
+            </div>
+            <div class="card">
+                <div class="login-or-sign-up">লগইন / একাউন্ট খুলুন </div>
+                <div class="login-text">
+                    আপনার মোবাইল নম্বর দিন 
+                 
+                </div>
+                <input class="phone-number-input" type="text">
+                <input class="submit-button" type="button" value="লগইন / একাউন্ট খুলুন" onclick="Click()">
+                <div class="spacer-40"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function Click(){
+            var x = localStorage.getItem("mytime");
+            console.log(x)
+            if(x== null){
+                location.href="verify.html"
+            }
+        }
+    </script>
+</body>
+</html>

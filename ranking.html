@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking</title>
+
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="ranking.css">
+
+    
+</head>
+<body>
+    <div class="container">
+        
+        <div class="ranking-content">
+            <div class="ranking-header">
+                লিডার বোর্ড 
+            </div>
+
+            <div class="filter-collection">
+                <div class="filter-button selected">
+                    
+                    সাপ্তাহিক 
+
+                </div>
+                <div class="filter-button">
+                    মাসিক 
+                </div>
+            </div>
+
+        </div>
+
+        <div class="ranking-cards">
+            <div class="card rank-card">
+                <div class="rank-no">
+                    ১
+                </div>
+                <div class="rank-avater">
+                    <img src="assets/color.png">
+                </div>
+                <div class="rank-name">
+                    <div class="rank-name-text">
+                        xxxxxxxxxxxx
+                    </div>
+                    <div class="rank-points">
+                        xxxxxxxxxxx
+                    </div>
+                </div>
+
+                <div class="rank-badge">
+                    <img src="https://img.icons8.com/ios/50/000000/medal2--v1.png"/>
+                </div>
+            </div>
+
+            <div class="card rank-card">
+                <div class="rank-no">
+                    ২
+
+                </div>
+                <div class="rank-avater">
+                    <img src="assets/color.png">
+                </div>
+                <div class="rank-name">
+                    <div class="rank-name-text">
+                        xxxxxxxxxxx
+                    </div>
+                    <div class="rank-points">
+                        xxxxxxxxxxx
+                    </div>
+                </div>
+
+                <div class="rank-badge">
+                    <img src="https://img.icons8.com/ios/50/000000/medal2--v2.png"/>
+                </div>
+            </div>
+
+
+            <div class="card rank-card">
+                <div class="rank-no">
+                    ৩
+
+                </div>
+                <div class="rank-avater">
+                    <img src="assets/color.png">
+                </div>
+                <div class="rank-name">
+                    <div class="rank-name-text">
+                        xxxxxxxxxxx
+                    </div>
+                    <div class="rank-points">
+                        xxxxxxxxxxx
+                    </div>
+                </div>
+
+                <div class="rank-badge">
+                    <img src="https://img.icons8.com/ios/50/000000/medal2--v2.png"/>
+                </div>
+            </div>
+
+
+            <div class="card rank-card">
+                <div class="rank-no">
+                    ৪
+
+                </div>
+                <div class="rank-avater">
+                    <img src="assets/color.png">
+                </div>
+                <div class="rank-name">
+                    <div class="rank-name-text">
+                        xxxxxxxxxxx
+                    </div>
+                    <div class="rank-points">
+                        xxxxxxxxxxx
+                    </div>
+                </div>
+
+                <div class="rank-badge">
+                    
+                </div>
+            </div>
+
+
+            <div class="card rank-card">
+                <div class="rank-no">
+                    ৫
+                </div>
+                <div class="rank-avater">
+                    <img src="assets/color.png">
+                </div>
+                <div class="rank-name">
+                    <div class="rank-name-text">
+                        xxxxxxxxxxx
+                    </div>
+                    <div class="rank-points">
+                        xxxxxxxxxxx
+                    </div>
+                </div>
+
+                <div class="rank-badge">
+                    
+                </div>
+            </div>
+
+
+        </div>
+
+        
+
+    </div>
+
+    <div class="nav-content">
+        <div class="nav-helper"></div>
+        <div class="navigation">
+            <ul>
+                <li class="list ">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="text">Home</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="search-outline"></ion-icon>
+                        </span>
+                        <span class="text">Search</span>
+                    </a>
+                </li>
+                <li class="list ">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="add-outline"></ion-icon>
+                        </span>
+                        <span class="text"></span>
+                    </a>
+                </li>
+                <li class="list active">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="stats-chart-outline"></ion-icon>
+                        </span>
+                        <span class="text">Ranking</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </span>
+                        <span class="text">Profile</span>
+                    </a>
+                </li>
+                <div class="indicator">
+                    <span class="indicator-icon">
+                        <ion-icon name="add-outline"></ion-icon>
+                    </span>
+                </div>
+            </ul>
+        </div>
+    </div>
+  
+        
+  
+    <script>
+
+        const list = document.querySelectorAll('.list'); 
+
+        function activeLink(){
+            list.forEach((item) => 
+            item.classList.remove( 'active'));
+            this.classList.add('active');
+
+        }
+        list.forEach((item) =>
+        item.addEventListener('click',activeLink));
+
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

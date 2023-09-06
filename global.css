@@ -1,0 +1,71 @@
+/* Path: global.css */
+@import url("https://fonts.googleapis.com/css?family=Poppins:10@,200,300,400,500,600,700,800,900" );
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+    --primary-color: #6A5AE0;
+    --background-color: #6A5AE0;
+    --primary-text-color: #000;
+    --neutral-black:#001833;
+    --paragraph-color: #858494;
+    --input-background-light: #E6E6E6;
+
+    --light-background: #fff;
+    
+    --feature-background: #9087E5;
+
+    --primary-font: 'Poppins', sans-serif;
+    --secondary-font: 'Nunito', sans-serif;
+    --tertiary-font: 'Rubik', sans-serif;
+
+    --text-color-light: #fff;
+    --text-color-dark: #000;
+    --text-color-decorative: #FFCCD5;
+
+    --recent-background: #FFCCD5;
+    --recent-text: #B46976;
+    --recent-header: #913A49;
+
+    --clr: var(--primary-color);
+    --filter-button-background: #4E42A9;
+    --selected-filter-button-background: #9087E5;
+
+    --max-width: 480px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+}
+
+.spacer-40 {
+    height: 40px;
+}
+
+.spacer-20 {
+    height: 20px;   
+}
+
+.btn {
+    background-color: #9087e5;
+    border-radius: 28px;
+    border: 1px solid #ededed;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 16px 150px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
+}
+.btn:hover {
+	background-color:#5cbf2a;
+}
+.btn:active {
+	position:relative;
+	top:1px;
+}

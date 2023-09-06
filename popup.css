@@ -1,0 +1,75 @@
+body {
+    background-color: var(--background-color, #6A5AE0);
+}
+
+.container {
+    max-width: var(--max-width, 480px);
+    margin: auto;
+    height: 100vh;
+    background-image: url(./assets/background_splash.svg);
+    background-size: cover;
+    background-position: 0% 0%;
+}
+
+.welcome-image {
+    width: 100%;
+    position: relative;
+    /* background-color: green; */
+}
+
+.welcome-image img {
+    margin-top: 150px;
+    height: 300px;
+    width: 100%;
+}
+
+.card {
+    position: relative;
+    bottom: 0;
+    width: calc(100%-40px);
+    height: auto;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 10px 20px;
+}
+
+.login-or-sign-up {
+    color: var(--neutral-black, #001833);
+    text-align: center;
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.login-text {
+    color: var(--paragraph-color, #001833);
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-justify: inter-word;
+    padding: 10px 0px;
+}
+
+.phone-number-input {
+    width: 100%;
+    border: 1px solid #E5E5E5;
+    border-radius: 16px;
+    padding: 10px;
+    margin: 10px 0px;
+    background-color: var(--input-background-light, #E6E6E6);
+    text-align: center;
+}
+
+.submit-button {
+    background-color: var(--background-color, #6A5AE0);
+    border-radius: 16px;
+    color: var(--text-color-light);
+    padding: 10px 20px;
+    width: 100%;
+}
+
