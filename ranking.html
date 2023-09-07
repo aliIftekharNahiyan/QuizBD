@@ -20,135 +20,25 @@
             </div>
 
             <div class="filter-collection">
-                <div class="filter-button selected">
-                    
-                    সাপ্তাহিক 
-
+                <div class="filter-button selected" onclick="showWeeklyData()">
+                    সাপ্তাহিক
                 </div>
-                <div class="filter-button">
-                    মাসিক 
+                <div class="filter-button" onclick="showMonthlyData()">
+                    মাসিক
                 </div>
             </div>
+            
 
         </div>
 
-        <div class="ranking-cards">
-            <div class="card rank-card">
-                <div class="rank-no">
-                    ১
-                </div>
-                <div class="rank-avater">
-                    <img src="assets/color.png">
-                </div>
-                <div class="rank-name">
-                    <div class="rank-name-text">
-                        xxxxxxxxxxxx
-                    </div>
-                    <div class="rank-points">
-                        xxxxxxxxxxx
-                    </div>
-                </div>
-
-                <div class="rank-badge">
-                    <img src="https://img.icons8.com/ios/50/000000/medal2--v1.png"/>
-                </div>
-            </div>
-
-            <div class="card rank-card">
-                <div class="rank-no">
-                    ২
-
-                </div>
-                <div class="rank-avater">
-                    <img src="assets/color.png">
-                </div>
-                <div class="rank-name">
-                    <div class="rank-name-text">
-                        xxxxxxxxxxx
-                    </div>
-                    <div class="rank-points">
-                        xxxxxxxxxxx
-                    </div>
-                </div>
-
-                <div class="rank-badge">
-                    <img src="https://img.icons8.com/ios/50/000000/medal2--v2.png"/>
-                </div>
-            </div>
-
-
-            <div class="card rank-card">
-                <div class="rank-no">
-                    ৩
-
-                </div>
-                <div class="rank-avater">
-                    <img src="assets/color.png">
-                </div>
-                <div class="rank-name">
-                    <div class="rank-name-text">
-                        xxxxxxxxxxx
-                    </div>
-                    <div class="rank-points">
-                        xxxxxxxxxxx
-                    </div>
-                </div>
-
-                <div class="rank-badge">
-                    <img src="https://img.icons8.com/ios/50/000000/medal2--v2.png"/>
-                </div>
-            </div>
-
-
-            <div class="card rank-card">
-                <div class="rank-no">
-                    ৪
-
-                </div>
-                <div class="rank-avater">
-                    <img src="assets/color.png">
-                </div>
-                <div class="rank-name">
-                    <div class="rank-name-text">
-                        xxxxxxxxxxx
-                    </div>
-                    <div class="rank-points">
-                        xxxxxxxxxxx
-                    </div>
-                </div>
-
-                <div class="rank-badge">
-                    
-                </div>
-            </div>
-
-
-            <div class="card rank-card">
-                <div class="rank-no">
-                    ৫
-                </div>
-                <div class="rank-avater">
-                    <img src="assets/color.png">
-                </div>
-                <div class="rank-name">
-                    <div class="rank-name-text">
-                        xxxxxxxxxxx
-                    </div>
-                    <div class="rank-points">
-                        xxxxxxxxxxx
-                    </div>
-                </div>
-
-                <div class="rank-badge">
-                    
-                </div>
-            </div>
-
-
+        <div id="weekly-container" class="ranking-cards">
+            <!-- Weekly data will be populated here -->
         </div>
-
         
-
+        <div id="monthly-container" class="ranking-cards">
+            <!-- Monthly data will be populated here -->
+        </div>
+        
     </div>
 
     <div class="nav-content">
@@ -220,6 +110,8 @@
         item.addEventListener('click',activeLink));
 
     </script>
+
+    <script src="ranking.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

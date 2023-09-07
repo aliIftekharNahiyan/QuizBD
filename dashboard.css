@@ -5,7 +5,7 @@ body {
 .container {
     max-width: var(--max-width, 480px);
     margin: auto;
-    height: 90vh;
+    /* height: 90vh; */
     /* background-image: url(./assets/background_splash.svg);
     background-size: cover;
     background-position: 0% 0%; */
